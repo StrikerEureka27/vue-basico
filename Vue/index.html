@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app" v-bind:style="{ background: '#' + color }">
+        <!-- v-bind:style="{ background: '#' + color }" -->
+        <coin-detail v-on:change-color="updateColor" v-bind:coin="btc">
+            <template v-slot:text >
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar lobortis pretium. Vivamus elementum
+                    convallis massa, non maximus lorem condimentum eget. Ut egestas laoreet laoreet. Aliquam pulvinar neque
+                    et purus auctor molestie.</p>
+            </template>
+            <template v-slot:link >
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar lobortis pretium. Vivamus elementum
+                    convallis massa, non maximus lorem condimentum eget. Ut egestas laoreet laoreet. Aliquam pulvinar neque
+                    et purus auctor molestie.</p>
+            </template>
+        </coin-detail>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

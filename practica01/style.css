@@ -1,0 +1,14 @@
+html {
+    padding: 20px;
+    color: #3d3d3d;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .red {
+    color: tomato;
+  }
+
+ .lista{
+     font-size: 15px;
+     font-weight: 700;
+ } 
